@@ -1,0 +1,29 @@
+# import math
+#
+# class test:
+#     def __init__(self,r):
+#         self.r = r
+#     @property
+#     def rt(self):
+#         M = self.r*math.pi
+#         return M
+# t = test(4)
+# print(t)
+# c = t.rt
+# print(c)
+class A:
+    def spam(self):
+        print('hello spam')
+
+    def __man(self):
+        print('man')
+
+class B(A):
+    @property
+    def m(self):
+        super().spam()
+        super().__man()
+        print('de')
+a = A()
+b = B()
+print(b.m)
